@@ -1,0 +1,29 @@
+:root {
+    --mainColor : #f1eee5;
+    --secondaryColor : #550964;
+    --acsentColor : #b591e4;
+}
+
+body{
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'poppins', 'sans-serif';
+    font-size: 17px;
+}
+
+/* Navbar */
+.container {
+    justify-content: center !important;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      justify-content: left !important;
+    }
+  }
+
+.nav-link.active{
+    color: var(--secondaryColor) !important;
+    font-weight: bolder;
+}
+/* End Navbar */
