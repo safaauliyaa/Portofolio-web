@@ -22,6 +22,10 @@ body{
     }
   }
 
+.nav-link{
+  white-space: nowrap;
+}
+
 .nav-link.active{
     color: var(--secondaryColor) !important;
     font-weight: bolder;
