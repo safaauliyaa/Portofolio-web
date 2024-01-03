@@ -1,7 +1,8 @@
 :root {
     --mainColor : #f1eee5;
     --secondaryColor : #550964;
-    --acsentColor : #b591e4;
+    --acsentColor2 : #b591e4;
+    --acsentColor : #6e6d7b;
 }
 
 body{
@@ -11,9 +12,15 @@ body{
     font-size: 17px;
 }
 
+section h1{
+  color: var(--secondaryColor);
+
+}
+
 /* Navbar */
 .container {
     justify-content: center !important;
+    font-size: 1.2rem;
   }
   
   @media only screen and (max-width: 768px) {
@@ -31,3 +38,45 @@ body{
     font-weight: bolder;
 }
 /* End Navbar */
+
+/* Hero */
+.color-acsent{
+  color: var(--acsentColor2);
+  font-weight: bolder !important;
+}
+
+#hero{
+  min-height: 100vh;
+
+}
+
+#hero h1{
+  font-size: 3rem;
+}
+
+#hero h2{
+  font-weight: 300;
+}
+
+#hero p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Button */
+.btn-custom1{
+  background-color: var(--secondaryColor);
+  text-align: center;
+  color: var(--mainColor);
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover{
+  box-shadow: 0 0 5px rgba(33, 4, 61, 0.8);
+  color: var(--acsentColor2);
+}
+
+/* End Hero */
