@@ -1,7 +1,7 @@
 :root {
     --mainColor : #f1eee5;
     --secondaryColor : #550964;
-    --acsentColor2 : #b591e4;
+    --acsentColor2 : #9470C2;
     --acsentColor : #6e6d7b;
 }
 
@@ -10,6 +10,7 @@ body{
     min-height: 900px;
     font-family: 'poppins', 'sans-serif';
     font-size: 17px;
+    margin-top: 60px;
 }
 
 section h1{
@@ -18,9 +19,19 @@ section h1{
 }
 
 /* Navbar */
+.navbar.fixed-top{
+  background-color: var(--mainColor);
+  /* opacity: 70%; */
+}
+
+.navbar-nav{
+  margin-top: 10px;
+}
+
 .container {
-    justify-content: center !important;
+    justify-content: left !important;
     font-size: 1.2rem;
+    margin-left: 50px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -40,18 +51,21 @@ section h1{
 /* End Navbar */
 
 /* Hero */
+
 .color-acsent{
   color: var(--acsentColor2);
   font-weight: bolder !important;
 }
 
 #hero{
+  margin-top: 180px;
   min-height: 100vh;
+  margin-left: 200px;
 
 }
 
 #hero h1{
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 #hero h2{
@@ -59,7 +73,7 @@ section h1{
 }
 
 #hero p{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
@@ -78,5 +92,18 @@ section h1{
   box-shadow: 0 0 5px rgba(33, 4, 61, 0.8);
   color: var(--acsentColor2);
 }
+
+.col-md-5{
+  float: right;
+  margin-top: -500px;
+  margin-right: -200px;
+  /* min-height: 10vh; */
+}
+
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
 
 /* End Hero */
