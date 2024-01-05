@@ -3,6 +3,7 @@
     --secondaryColor : #550964;
     --acsentColor2 : #9470C2;
     --acsentColor : #6e6d7b;
+    --acsentColor3 : #B2A3BA;
 }
 
 body{
@@ -51,6 +52,23 @@ section h1{
 /* End Navbar */
 
 /* Hero */
+.container2{
+  justify-content: center !important;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    justify-content: left !important;
+  }
+}
 
 .color-acsent{
   color: var(--acsentColor2);
@@ -58,23 +76,27 @@ section h1{
 }
 
 #hero{
-  margin-top: 180px;
+  margin-top: 200px;
   min-height: 100vh;
-  margin-left: 200px;
-
+  text-align: center;
+  justify-content: center !important;
+  align-items: center;
 }
 
 #hero h1{
   font-size: 3.2rem;
+  text-align: center;
 }
 
 #hero h2{
-  font-weight: 300;
+  font-weight: 500;
+  text-align: center;
 }
 
 #hero p{
   font-size: 1.4rem;
   font-weight: 300;
+  text-align: center;
 }
 
 /* Button */
@@ -86,6 +108,8 @@ section h1{
   height: 45px;
   font-weight: 700;
   font-size: 1.2rem;
+  align-self: center;
+  margin: auto;
 }
 
 .btn-custom1:hover{
@@ -93,17 +117,47 @@ section h1{
   color: var(--acsentColor2);
 }
 
-.col-md-5{
-  float: right;
-  margin-top: -500px;
-  margin-right: -200px;
-  /* min-height: 10vh; */
+/* End Hero */
+
+
+/* About Section */
+
+#about{
+  background: var(--acsentColor3);
+  padding: 70px;
+  margin-top: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-/* .clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-} */
+.pict{
+  width: 10%;
+  margin-top: -170px;
+  margin-bottom: 30px;
+  align-self: center;
+}
 
-/* End Hero */
+#about p{
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--secondaryColor);
+  margin-top: 10px;
+}
+
+.quote1 {
+  position: absolute;
+  left: 300px; 
+  top: 30%;
+  height: 30px;
+}
+
+.quote2 {
+  position: absolute;
+  right: 500px; 
+  bottom: 20%;
+  height: 30px;
+}
+/* End About Section */
