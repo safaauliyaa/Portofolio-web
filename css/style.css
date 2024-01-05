@@ -27,13 +27,13 @@ section h1{
 }
 
 .navbar-nav{
-  margin-top: 10px;
+  margin-top: 2%;
 }
 
 .container {
     justify-content: left !important;
     font-size: 1.2rem;
-    margin-left: 50px;
+    margin-left: 2%;
   }
   
   @media only screen and (max-width: 768px) {
@@ -165,3 +165,50 @@ section h1{
   height: 10%;
 }
 /* End About Section */
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  /* Hero */
+  #hero .col-5 {
+    width: 80%; 
+  }
+
+  #hero{
+    margin-top: 35%;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero h2 {
+    font-size: 1.5rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .btn-custom1 {
+    margin-top: 10px;
+  }
+
+  /* About Section */
+  #about {
+    margin-top: -100%;
+    padding: 10px;
+  }
+
+  #about p{
+    font-size: 1rem;
+  }
+
+  .pict{
+    width: 30%;
+  }
+
+  .quote1,
+  .quote2 {
+    height: 1%;
+  }
+}
